@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline;
+            padding: 30px;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        h1{
+            background-color: blue;
+            padding: 50px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 600px;">
+        <h1>Mi página web</h1>
+        <ul>
+            <li><a href="#video">Ir a videos</a></li>
+            <li><a href="#formulario">Ir a formulario</a></li>
+            <li><a href="#masopciones">Ir a galeria</a></li>
+            <li><a href="#video">Ir a descargas</a></li>
+        </ul>
+    Hola a tod@s
+    <h3>Ruta Absoluta</h3>
+    <img src="data:image/jpeg;base64,/9j/" alt="">
+    <h3>Ruta Relativa</h3>
+    <img src="./img/madera.jpg" alt="">
+    <h2>Descargar PDF</h2>
+    <!--se le puede agregar  target="_blank" para abrir en una nueva pestaña-->
+    <a href="./pdf/bases.pdf" download="Bases y Condiciones">Aquí</a>
+    <form id="formulario" action="../clase1/paginas/paginas2.html" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Entrar">
+    </form>
+    <!--input de tipo boton-->
+    <input type="button" value="Botón" onclick="alert('Hola')">
+
+    <h3>Tipos de input</h3>
+    <label for="radio">Radio</label>
+    <input type="radio" name="radio" id="radio"><!-- el name es para url y el id para una funcion-->
+    <br><br><br>
+
+    <h3>Provincia</h3>
+    <label for="radio">Gran Buenos Aires</label>
+    <input type="radio" name="radio" id="radio">
+    <label for="radio">Chubut</label>
+    <input type="radio" name="radio" id="radio">
+    <label for="radio">Jujuy</label>
+    <input type="radio" name="radio" id="radio">
+
+    <br><br><br>
+
+    <select name="" id="">
+        <option value="">Idem 1</option>
+        <option value="">Idem 2</option>
+        <option value="">Idem 3</option>
+        <option value="">Idem 4</option>
+    </select>
+
+    <br><br><br>
+    <label for="">Lista html</label>
+    <label for="">body</label>
+    <input type="checkbox" name="" id="">
+    <label for="">script</label>
+    <input type="checkbox" name="" id="">
+    <label for="">head</label>
+    <input type="checkbox" name="" id="">
+
+    <br><br><br>
+    <video id="video" src="./videos/video.mp4" controls></video>
+    <p>Lorem,<b><i> ipsum dolor sit amet </i></b>consectetur adipisicing elit. Tenetur sequi minus accusantium et ratione libero nemo in. Expedita eius, odio veritatis ipsum accusamus corporis cumque quod soluta, recusandae optio itaque.</p>
+    
+        <div id="masopciones">
+            <img src="./img/madera.jpg" alt="">
+        </div>
+        <div id="descargas">
+            <a href="./pdf/bases.pdf" download="Bases y Condiciones">Descarga PDF</a>
+        </div>
+    <!--diferencia entre div y span
+    el div es in block y el span es inline-->
+    <p>Lorem, ipsum <div>dolor sit amet</div> consectetur adipisicing elit. Ut rem, dolorem magni ratione maiores culpa dolor sunt saepe officia suscipit nemo necessitatibus quibusdam dicta tenetur optio reiciendis qui nobis quos?</p>
+    <p>Lorem ipsum <span> dolor sit amet,</span> consectetur adipisicing elit. Ex fuga facere nam mollitia corrupti vero odit, facilis deleniti voluptatibus aut velit porro sunt perferendis esse dolorum exercitationem eos inventore! Aut.</p>
+    </div>
+    
+</body>
+</html>
