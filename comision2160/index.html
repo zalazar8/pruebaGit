@@ -5,27 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase de Git</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <h1>Códigos de Git</h1>
-    <ul>
-        <li>git init</li>
-        <li>git add *</li>
-        <li>git status</li>
-        <li>git commit -m "nuestro commit"</li>
-        <li>git push -u origin master</li>
-    </ul>
-    <!-- 
-    con esto funciona para hacer el git local
+    <a href="#cuadrado">Con flex</a>
+    <a href="#init">Códigos Git</a>
+    <div class="git">
+        <ul>
+            <li>git init</li>
+            <li>git add *</li>
+            <li>git status</li>
+            <li>git commit -m "nuestro commit"</li>
+            <li>git push -u origin master</li>
+            <li>git clone</li>
+        </ul>
+    </div>
+    <div class="cuadrado" id="cuadrado">
+        <p>Probando otra versión</p>
+        <!-- 
+        con esto funciona para hacer el git local
 
-    git --version
+        git --version
 
-    git init
+        git init
 
-    git add *
+        git add *
 
-    git status muestra que fueron añadidos todos los archivos pero no hay un commit
+        git status muestra que fueron añadidos todos los archivos pero no hay un commit
 
-    git commit -m "primera version" -->
+        git commit -m "primera version" -->
+        <div id="padre">
+            <div class="hija"></div>
+            <div class="hija"></div>
+            <div class="hija"></div>
+            <div class="hija"></div>
+            <div class="hija"></div>
+        </div>
+    </div>
+    <div id="init">
+        <h2>Git init</h2>
+        <p>Lorem ipsum dolor sit amet consectetur,<span> adipisicing elit.</span> Odio fuga sit amet repellat dolor. Delectus, aspernatur voluptatibus ducimus doloremque beatae laudantium corporis error quia quaerat et possimus sapiente dicta unde?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusamus, dicta fugiat, ea cupiditate iste itaque est ipsam dolores ducimus recusandae aliquid distinctio temporibus delectus! Excepturi voluptatem repellendus molestiae ipsum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nemo voluptatum incidunt culpa libero, architecto fuga explicabo labore aperiam vel velit. Quas laudantium aut sunt impedit eos illum dolor possimus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quae tenetur esse odit illum magnam quisquam nihil quos similique voluptatibus, quod possimus nesciunt neque ipsam molestias? Exercitationem delectus tempora laboriosam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque odio rerum libero quae molestiae dolor nobis non recusandae cupiditate omnis! Sint quibusdam recusandae et nesciunt reprehenderit libero. Non, porro aliquid.
+        </p>
+    </div>
+    <div id="add">
+        <h2>Git Add</h2>
+        <p>Para añadir al espacio de trabajo los cambios.</p>
+    </div>
+    <div id="status">
+        <h2>Git status</h2>
+        <p>Para ver el estatus en el que se encuentra mi repositorio Local.</p>
+    </div>
+    <div id="commit">
+        <h2>Git commit</h2>
+        <p>Para hacer una descripción de ese cambio o versión de mi repositorio Local.</p>
+    </div>
+    <div id="push">
+        <h2>Git push</h2>
+        <p>Actualizar el repositorio Local con el de github.</p>
+    </div>
 </body>
 </html>
