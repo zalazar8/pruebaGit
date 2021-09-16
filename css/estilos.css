@@ -1,0 +1,35 @@
+body{
+    background-color: blueviolet;
+}
+#etiquetas{
+    background-color: black;
+    width: 80%;
+    color: white;
+    height: 200px;
+}
+.azul{
+    background-color: blue;
+}
+div{
+    background-color: brown;
+    height: 500px;
+}
+li{
+    display: inline;
+    padding: 10px;
+    border: 1px solid white;
+    margin: 4px;
+    background-color: blueviolet;
+    cursor: pointer;
+    box-shadow: 5px 5px 4px white;
+}
+li:hover{
+    /* color de fondo */
+    background-color: aqua;
+    color: black;
+    box-shadow: -5px 5px 10px white;
+    opacity: 0.5;
+}
+.pag2{
+    background-color: violet;
+}
